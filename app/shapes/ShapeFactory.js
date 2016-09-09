@@ -28,4 +28,8 @@ export default class ShapeFactory {
                 throw new Error(`${shapeType} will be implemented in future`);
         }
     }
+
+    static getAllShapesList(){
+        return ['circle', 'square', 'rectangle', 'ellipse']
+    }
 }
