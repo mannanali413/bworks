@@ -1,0 +1,42 @@
+$font-family-roboto: 'Roboto', sans-serif;
+$font-family-base:   $font-family-roboto;
+
+$color-blue: #55bbea;
+$color-base: #4a4a4a;
+
+@import "reset";
+@import "common";
+
+.font-base   { font-family: $font-family-base !important; }
+.font-roboto { font-family: $font-family-roboto !important; }
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    font-family: $font-family-base;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: $color-base;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: normal;
+    margin: 0;  // No margin by default. We'll use utility classes for setting these
+}
+
+a {
+    text-decoration: none;
+    color: $color-blue;
+}
+
+input, select, textarea{
+    font-family: $font-family-base;
+}
+
+@import "components/page";
+@import "components/input";
+@import "components/calculator";

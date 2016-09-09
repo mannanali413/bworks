@@ -1,0 +1,41 @@
+@import "../common"
+
+.calculator {
+	&-container {
+		width: 90%;
+		margin: 0 auto;
+		padding: 20px;
+		margin-top: 10px;
+	}
+
+	&-block {
+		display: inline-block;
+	}
+
+	&-steps {
+		width: 30%;
+		padding: 10px 20px;
+		border: 1px solid #A4A4A4;
+		border-radius: 2px;
+		margin-left: 10px; 
+		margin-right: 10px;
+	}
+
+	&-description {
+		width: 50%;
+		padding: 10px 20px;
+
+		&__para {
+			margin-top: 5px;
+
+			&-bold {
+				font-weight: $bold;
+			}
+		}
+	}
+
+	&-aside {
+		width: 120px;
+		height: 240px;
+	}
+}

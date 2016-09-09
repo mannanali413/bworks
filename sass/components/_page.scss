@@ -1,0 +1,16 @@
+@import "../common";
+$page-header-ht: 48px;
+
+.page {
+    position: fixed;
+    top: 50px;
+    left:0; right:0; bottom:0;
+
+
+    &_content {
+        position:absolute; z-index: 1;
+        top:0; left: 0; right: 0; bottom: 0;
+        overflow-y: scroll;
+    }
+    
+}
