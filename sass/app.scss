@@ -37,6 +37,10 @@ input, select, textarea{
     font-family: $font-family-base;
 }
 
+.clear {
+    clear: both;
+}
+
 @import "components/page";
 @import "components/input";
 @import "components/calculator";

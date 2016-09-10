@@ -17,6 +17,15 @@ export default handleActions(Object.assign({}, {
 		let newState = Object.assign({}, state)
 		newState.shape = null
 		return newState;
+	},
+
+	[constants.SET_DIM_AND_COMPUTE_AREA] (state, action){
+		let newState = Object.assign({}, state)
+		if(!action.error){
+			newState.shape.dimensions = action.payload
+			newState.shape.computeArea()
+		}
+		return newState;
 	}
 
 }), defaultState);

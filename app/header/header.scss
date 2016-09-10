@@ -6,16 +6,17 @@ $header-ht: 50px;
 	display: block; height: $header-ht;
 	position: fixed;
 	top: 0; left: 0; right: 0;
-	padding:0 20px;
+	padding:0 5%;
 	background-image: url("../images/header_bg.gif");
 	background-repeat: no-repeat;
 	background-size: 100% 100%; 
 
 	&__title {
-		font-weight: $middle;
+		font-weight: $medium;
 		display: inline-block;
 		font-size: 24px;
 		line-height: 32px;
+		padding: 10px;
 	}
 
 }

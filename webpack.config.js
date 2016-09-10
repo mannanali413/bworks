@@ -58,7 +58,8 @@ var configuration = {
             app: 'app',
             steps: 'app/steps',
             shapes: 'app/shapes',
-            header: 'app/header'
+            header: 'app/header',
+            utils: 'app/utils'
         },
         extensions: ['', '.js', '.jsx', '.scss']
     },

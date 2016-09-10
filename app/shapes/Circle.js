@@ -11,7 +11,7 @@ export default class Circle extends Shape{
 
 	computeArea(){
 		let {diameter} = this._dimensions
-		let area = (Math.pi * diameter * diameter)/4
-		this.computedArea(area);
+		let area = (Math.PI * diameter * diameter)/4
+		this.computedArea = area;
 	}
 }

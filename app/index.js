@@ -9,8 +9,7 @@ import reduxPromise from 'redux-promise'
 import injectTapEventPlugin from "react-tap-event-plugin"
 
 import App from './App'
-// import {Selector, ShapeForm, ShapeArea} from 'steps'
-import ShapeSelector from 'steps'
+import {ShapeSelector, ShapeDimensions, ShapeAreaInfo} from 'steps'
 import reducers from './reducers'
 
 
@@ -27,14 +26,12 @@ ReactDOM.render(
     <Provider store={store}>
         <Router history={browserHistory}>
             <Route path="/" component={App}>
-                <IndexRedirect to="/step1" />
+                <IndexRedirect to="step1" />
                 <Route path='step1' component={ShapeSelector} />
-                // <Route path='step2' component={ShapeDimensionInput} />
-                // <Route path='step3' component={ShapeAreaInfo} /> 
+                <Route path='step2' component={ShapeDimensions} />
+                <Route path='step3' component={ShapeAreaInfo} />
             </Route>
         </Router>
     </Provider>,
     document.getElementById('root')
 );
-
-// this.props.location.query

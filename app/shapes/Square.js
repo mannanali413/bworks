@@ -12,6 +12,6 @@ export default class Square extends Shape{
 	computeArea(){
 		let {side} = this._dimensions
 		let area = (side * side)
-		this.computedArea(area);
+		this.computedArea = area;
 	}
 }

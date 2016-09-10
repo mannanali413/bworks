@@ -1,0 +1,74 @@
+@import "../common";
+
+.calculatorForm {
+	
+	&__title {
+		text-align: center;
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 10px;
+	}
+
+	&__helperText {
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 5px;
+	}
+
+	&__form {
+		margin-top: 20px;
+		min-height: 125px;
+
+		.text_label {
+			display: block;
+			margin-top: 5px;
+			width: 200px;
+			font-weight: $medium;
+			font-size: 14px;
+
+			input[type="text"] {
+				width: 100px;
+				float: right;
+			}
+		}
+
+		.radio_label {
+			display: block;
+			margin-top: 5px;
+
+			input[type="radio"] {
+    			margin-right: 10px;
+    			vertical-align: text-bottom;
+			}
+		}
+	}
+
+	&__result {
+		margin-top: 20px;
+		height: 125px;
+		position: relative;
+
+		.result_text {
+			text-align: center;
+		    font-size: 16px;
+		    line-height: 20px;
+		    font-weight: bold;
+		    position: absolute;
+		    width: 100%;
+		    top: 25%;
+		}
+	}
+
+	&__error {
+		color: red;
+		font-size: 10px;
+		font-weight: $light;
+		padding: 2px 5px;
+	}
+
+	&__button {
+		display: inline-block;
+		margin: 10px 5px;
+		cursor: pointer;
+	}
+}

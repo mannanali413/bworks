@@ -1,4 +1,5 @@
 import Shape from './Shape'
+import * as Utils from 'utils'
 
 export default class Ellipse extends Shape{
 	
@@ -12,7 +13,7 @@ export default class Ellipse extends Shape{
 
 	computeArea(){
 		let {major, minor} = this._dimensions
-		let area = (Math.pi*major * minor)
-		this.computedArea(area);
+		let area = (Math.PI*major * minor)
+		this.computedArea = area;
 	}
 }

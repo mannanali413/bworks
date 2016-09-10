@@ -1,3 +1,5 @@
+import * as Utils from 'utils'
+
 export default class Shape {
 	constructor(type, dimensions){
 		if (new.target === Shape) {
@@ -20,7 +22,7 @@ export default class Shape {
 	}
 
 	set dimensions(value){
-		this._dimensions = value
+		this._dimensions = Utils.getParsedDimensions(value)
 	}
 
 	get computedArea(){
@@ -31,14 +33,4 @@ export default class Shape {
 		this._area = value
 	}
 
-	getShapeInfo(){
-		let infoArray = []
-		let qString = `You have computed the area of ${this._type} with a `
-		for(let key in this._dimensions){
-			infoArray.push(`${key} of ${this._dimensions[key]}`)
-		}
-		let dimensionInfo = infoArray.join(" and ")
-		qString = `${qString} ${dimensionInfo}.Below is your result`
-		return qString
-	}
 }

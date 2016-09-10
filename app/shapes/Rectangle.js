@@ -13,6 +13,6 @@ export default class Rectangle extends Shape{
 	computeArea(){
 		let {length, width} = this._dimensions
 		let area = (length * width)
-		this.computedArea(area);
+		this.computedArea = area;
 	}
 }

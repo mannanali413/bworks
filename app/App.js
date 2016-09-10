@@ -37,7 +37,6 @@ class CalculatorAside extends Component {
 	}
 
 	handleImageLoad(e){
-
 	}
 }
 
@@ -58,6 +57,7 @@ class App extends Component{
 							{this.props.children}
 						</div>
 						<CalculatorAside/>
+						<br className="clear"/>
 					</div>
 				</div>
 			</div>
